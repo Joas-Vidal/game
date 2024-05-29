@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --blue-color: #313cb1;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+#game {
+    background-color: #fff;
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.header {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #000fbc;
+    background-color: #ededed;
+}
+.header .data-char, .identificacao, .info {
+    display: flex;
+}
+.data-char {
+    justify-content: space-between;
+    padding: 0 14px;
+}
+.identificacao img {
+    width: 50px;
+    height: 50px;
+}
+.info {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    justify-content: flex-start;
+}
+h1 {
+    margin-bottom: 20px;
+}
+#choices {
+    margin-top: 20px;
+}
+.choice {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.choice:hover {
+    background-color: #0056b3;
+}
+.info h2 {
+    font-size: 16px;
+    color: #000fbc;
+}
+.info h3 {
+    font-size: 14px;
+    color: var(--blue-color);
+}
+.bank {
+    text-align: right;
+}
+.bank h2 {
+    font-size: 16px;
+    color: green;
+}
+.bank h3 {
+    font-size: 14px;
+    color: var(--blue-color);
+}
+.y-game {
+    text-align: left;
+    margin-top: 15px;
+    color: var(--blue-color);
+    padding: 0 6px;
+    font-size: 14px;
+}
+#conteudo_ano, .conteudo_ano {
+    font-size: 12px;
+    text-align: left;
+    padding: 0 6px;
+}
+.next_year {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.next_year--btn {
+    width: 70px;
+    border-radius: 4px;
+    background: #007bff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+.modal-body {
+    text-align: left;
+}
