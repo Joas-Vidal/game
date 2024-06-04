@@ -99,8 +99,9 @@ h1 {
 }
 .next_year {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: absolute;
+    padding: 0 6px;
     bottom: 20px;
     width: 100%;
 }
@@ -118,4 +119,78 @@ h1 {
 }
 .modal-body {
     text-align: left;
+}
+.campo_personagem {
+    display: flex;
+}
+.brasil {
+    background-image: url("img/brasil.png");
+    height: 100% !important;
+    width: 100% !important;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left; 
+}
+.japao {
+    background-image: url("img/japao.png");
+    height: 100% !important;
+    width: 100% !important;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left; 
+}
+.espanha {
+    background-image: url("img/espanha.png");
+    height: 100% !important;
+    width: 100% !important;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left; 
+}
+.img_pais {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 6px;
+}
+.atividades img {
+    transition: transform 1s;
+}
+.atividades img:hover, .atividades img:active {
+    transform: rotate(90deg);
+}
+#atividades {
+    width: 100%;
+    position: absolute;
+    top: 73px;
+}
+#atividades .card {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+.box-title {
+    width: 100%;
+    background: var(--blue-color);
+    padding: 15px 10px;
+}
+.box-title h2 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+.fechar_atividades {
+    background: none;
+    border: 0;
+    float: left;
+}
+.accordion-button {
+    display: flex;
+}
+.accordion-button img {
+    margin-right: 6px;
+    height: 22px;
+    width: 22px;
+}
+.accordion-button span {
+    font-weight: 500;
 }

@@ -73,4 +73,15 @@ $(document).ready(function() {
         var novoTexto = randomizarTexto();
         $('#text-container').append('<div>' + novoTexto + '</div>');
     });
+
+    $('#country_select').on('change', function() {
+        var country = $(this).val().toLowerCase(); // Obtém o valor selecionado e converte para minúsculas
+        var countryClass = country.replace('ã', 'a'); // Substitui caracteres especiais
+        // Remove todas as classes de país previamente adicionadas na imagem
+        $('.img_pais').removeClass('brasil japao espanha');
+        // Adiciona a nova classe baseada no país selecionado
+        if (countryClass) {
+            $('.img_pais').addClass(countryClass);
+        }
+    });
 });
